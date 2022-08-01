@@ -1,20 +1,20 @@
-var obj = JSON.parse($response.body);
- obj= {
- "code": 0,
- "msg": "OK",
- "result": {
-  "resourceld": "",
-  "residualSecond": "0",
-  "rightsType":"SPEED_VIP_KM1",
-  "level":"0",
-  "description":null,
-  "beginTime":"2022-06-23",
-  "endTime":"2029-06-23",
-  "userBindDeviceList":[],
-  "deviceOverflow":"0",
-  "status":"2",
-  "overdueSecond":"0"
- }
+let obj = JSON.parse($response.body);
+
+obj = {
+  "code": 0,
+  "msg": "OK",
+  "result": {
+    "resourceld": "",
+    "residualSecond": "0",
+    "rightsType": "SPEED_VIP_KM1",
+    "level": "0",
+    "description": null,
+    "beginTime": "2022-06-23",
+    "endTime": "2029-06-23",
+    "userBindDeviceList": [],
+    "deviceOverflow": "0",
+    "status": "2",
+    "overdueSecond": "0"
+  }
 };
-$done({body: JSON.stringify(obj)});
-//
+$done({ body: JSON.stringify(obj) });
